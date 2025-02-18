@@ -20,7 +20,6 @@ class LinkedList:
     def display(self):
         temp = self.head
         while temp:
-            print(temp.data, end=" -> ")
             print(f"Data: {temp.data}, Alamat: {hex(id(temp))} ->", end=" ")
             temp = temp.next
         print("None")
