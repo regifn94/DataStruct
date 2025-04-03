@@ -1,0 +1,75 @@
+Selamat malam semua, besok no class, tapi sir mo kase tugas.
+
+Tugas 1: Operasi Dasar List
+Buatlah program Python yang:
+
+Membuat list berisi 5 nama buah.
+Menambahkan satu buah ke dalam list.
+Menghapus satu buah dari list.
+Mengurutkan list secara alfabetis.
+Menampilkan list sebelum dan setelah perubahan.
+Contoh Output:
+
+
+List awal: ['Apel', 'Jeruk', 'Mangga', 'Pisang', 'Anggur'] List setelah penambahan: ['Apel', 'Jeruk', 'Mangga', 'Pisang', 'Anggur', 'Durian']
+List setelah penghapusan: ['Apel', 'Jeruk', 'Pisang', 'Anggur', 'Durian']
+List setelah diurutkan: ['Anggur', 'Apel', 'Durian', 'Jeruk', 'Pisang']
+
+Tugas 2: Operasi Dasar Set
+Buatlah program Python yang:
+
+Membuat dua set angka (misalnya {1, 2, 3, 4, 5} dan {4, 5, 6, 7, 8})
+Menampilkan hasil irisan (intersection) dari kedua set.
+Menampilkan hasil gabungan (union) dari kedua set.
+Menampilkan hasil selisih (difference) dari set pertama terhadap set kedua.
+Contoh Output:
+
+Set A: {1, 2, 3, 4, 5}
+Set B: {4, 5, 6, 7, 8}
+Irisan (A ∩ B): {4, 5}
+Gabungan (A ∪ B): {1, 2, 3, 4, 5, 6, 7, 8}
+Selisih (A - B): {1, 2, 3}
+
+Tugas 3: Operasi Dasar Dictionary
+Buatlah program Python yang:
+
+Membuat dictionary berisi data mahasiswa dengan NIM sebagai key dan nama sebagai value.
+Menambahkan satu mahasiswa baru ke dalam dictionary.
+Menghapus satu mahasiswa berdasarkan NIM.
+Menampilkan seluruh data mahasiswa.
+Contoh Output:
+
+Data Mahasiswa:
+{101: 'Andi', 102: 'Budi', 103: 'Citra'}
+ Setelah menambah mahasiswa:
+{101: 'Andi', 102: 'Budi', 103: 'Citra', 104: 'Dewi'}
+ Setelah menghapus mahasiswa dengan NIM 102:
+{101: 'Andi', 103: 'Citra', 104: 'Dewi'}
+
+Tugas 4: Frekuensi Kata dalam Kalimat (Dictionary)
+Buatlah program Python yang meminta pengguna memasukkan sebuah kalimat, lalu menghitung frekuensi kemunculan setiap kata menggunakan dictionary.
+Contoh Input:
+Masukkan kalimat: belajar Python itu mudah dan menyenangkan belajar Python seru
+Contoh Output:
+{'belajar': 2, 'Python': 2, 'itu': 1, 'mudah': 1, 'dan': 1, 'menyenangkan': 1, 'seru': 1}
+
+
+Tugas 5:  Buatlah singly linked list yang memiliki operasi berikut:
+
+Menambahkan node di akhir (append).
+Menampilkan seluruh elemen dalam linked list.
+Menghapus node berdasarkan nilai tertentu dari linked list.
+Mencari nilai di linked list
+
+Tugas 6: Buatlah doubly linked list dengan operasi berikut:
+Menambahkan node di akhir (append)
+Menampilkan seluruh elemen dari depan
+Menampilkan seluruh elemen dari belakang
+Menghapus node berdasarkan nilai tertentu  .
+Mencari nilai di linked list
+
+Tugas 6:  Buatlah program yang mensimulasikan fitur Undo & Redo menggunakan Stack (deque)
+
+tulis(teks): Menambahkan teks ke dalam dokumen.
+undo(): Mengembalikan teks terakhir yang ditambahkan.
+redo(): Mengembalikan teks yang di-undo.
