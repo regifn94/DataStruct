@@ -1,3 +1,5 @@
+from graphviz import Digraph
+
 class Node:
     def __init__(self, key):
         self.left = None
@@ -37,6 +39,22 @@ class BinaryTree:
             self.postorder(node.right)
             print(node.key, end=" ")
 
+    def visualize_tree(self, filename="binary_tree"):
+        dot = Digraph()
+        self._add_nodes_edges(dot, self.root)
+        dot.render(filename, format='png', cleanup=False)
+        print(f"Tree visualization saved as {filename}.png")
+
+    def _add_nodes_edges(self, dot, node):
+        if node:
+            dot.node(str(node.key), str(node.key))
+            if node.left:
+                dot.edge(str(node.key), str(node.left.key))
+                self._add_nodes_edges(dot, node.left)
+            if node.right:
+                dot.edge(str(node.key), str(node.right.key))
+                self._add_nodes_edges(dot, node.right)
+
 # Membuat binary tree dengan "JHDBGMIKACFL"
 bt = BinaryTree('J')
 bt.build_tree("JHDBGMIKACFL")
@@ -47,3 +65,6 @@ print("\nInorder Traversal:")
 bt.inorder(bt.root)
 print("\nPostorder Traversal:")
 bt.postorder(bt.root)
+
+# Visualisasi pohon
+bt.visualize_tree()
